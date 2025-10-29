@@ -1,15 +1,17 @@
-# Chat402 Community
+# Chat402 - Crypto-Native LLM API Gateway
 
 > **Pay for AI with Crypto. No subscriptions. No credit cards. Just crypto and control.**
 
-Welcome to the Chat402 community repository! This is a space for developers to share examples, integrations, and contributions to the Chat402 ecosystem.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![API Status](https://img.shields.io/badge/API-Production-success)](https://api.chat402.xyz)
+[![Documentation](https://img.shields.io/badge/docs-comprehensive-blue)](./API_REFERENCE.md)
 
-## What is Chat402?
-
-Chat402 is the first LLM API gateway built for x402 payments. Access GPT-4, Claude, Gemini, and more using USDC on Base or Solana. Pay-per-prompt.
+Chat402 is the first LLM API gateway built for x402 payments. Access GPT-4, Claude, Gemini, Grok, and DeepSeek using USDC on Base (Ethereum L2) or Solana. Pay-per-prompt with transparent pricing.
 
 🌐 **Website:** [chat402.xyz](https://www.chat402.xyz)
-📚 **Docs:** [docs.chat402.xyz](https://docs.chat402.xyz)
+📚 **API Reference:** [API_REFERENCE.md](./API_REFERENCE.md)
+🏗️ **Architecture:** [ARCHITECTURE.md](./ARCHITECTURE.md)
+🔒 **Security:** [SECURITY.md](./SECURITY.md)
 💬 **Discord:** [discord.gg/chat402](https://discord.gg/chat402)
 
 ## Features
@@ -53,14 +55,29 @@ curl -X POST https://api.chat402.xyz/api/v1/prompt \
 }
 ```
 
-## Community Examples
+## Documentation
 
-Check out the [`/examples`](./examples) directory for code samples in various languages:
+### Core Documentation
 
-- **Node.js** - TypeScript/JavaScript integration
-- **Python** - Python SDK examples
-- **Go** - Golang implementation
-- **Rust** - Rust examples
+| Document | Description |
+|----------|-------------|
+| [📖 API Reference](./API_REFERENCE.md) | Complete API documentation with all endpoints, parameters, and responses |
+| [🏗️ Architecture](./ARCHITECTURE.md) | System architecture, protocol design, and technical specifications |
+| [🔒 Security Guide](./SECURITY.md) | Best practices for API keys, wallets, and secure integration |
+| [🛠️ API Improvements](./API_IMPROVEMENTS.md) | Recent API enhancements and migration guides |
+| [🤝 Contributing](./CONTRIBUTING.md) | Guidelines for contributing to the project |
+
+### Code Examples
+
+Check out the [`/examples`](./examples) directory for production-ready code samples:
+
+| Language | Features | Documentation |
+|----------|----------|---------------|
+| **TypeScript/JavaScript** | Complete client with streaming, error handling, type safety | [README](./examples/typescript/) |
+| **Go** | Idiomatic Go client with context support | [README](./examples/go/README.md) |
+| **Python** | Async/sync support, pandas integration | [README](./examples/python/README.md) |
+| **Node.js** | Express.js integration examples | [README](./examples/nodejs/README.md) |
+| **cURL** | Quick command-line examples | [README](./examples/curl/) |
 
 ## Contributing
 
@@ -71,6 +88,7 @@ We welcome contributions! Whether it's:
 - 🎨 UI components
 - 📖 Documentation improvements
 - 🐛 Bug reports
+- 🔒 Security enhancements
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 
